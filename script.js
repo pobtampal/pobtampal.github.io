@@ -55,7 +55,7 @@ if (reduceMotion) {
 }
 
 // Fade-in sections on scroll
-const revealTargets = document.querySelectorAll(".section-title, .skill-card, .project, .cert, .contact-card, .about-grid");
+const revealTargets = document.querySelectorAll(".section-title, .job, .skill-card, .project, .cert, .contact-card, .about-grid");
 revealTargets.forEach((el) => el.classList.add("reveal"));
 const observer = new IntersectionObserver(
   (entries) => entries.forEach((e) => {

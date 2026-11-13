@@ -22,6 +22,7 @@
       <nav class="nav-links">
         <a href="index.html">← Home</a>
         <a href="#about">About</a>
+        <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#certs">Certifications</a>
@@ -99,7 +100,7 @@ siem · ai-assisted defense</span>
             <!-- TODO: Fill in or delete the location and education rows -->
             <li><span class="mono muted">location</span> City, Country</li>
             <li><span class="mono muted">education</span> Your Degree, University</li>
-            <li><span class="mono muted">experience</span> WanAware</li>
+            <li><span class="mono muted">role</span> Security Engineer Intern @ WanAware</li>
             <li><span class="mono muted">focus</span> AppSec, Cloud, SIEM</li>
             <li><span class="mono muted">status</span> <span class="accent">Open to full-time roles</span></li>
           </ul>
@@ -107,10 +108,52 @@ siem · ai-assisted defense</span>
       </div>
     </section>
 
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title"><span class="mono accent">02.</span> Experience</h2>
+
+        <!-- Copy one <article class="job"> block to add another role -->
+        <article class="job">
+          <div class="job-head">
+            <div>
+              <h3>Cyber Security Engineer Intern <span class="accent">@ WanAware</span></h3>
+              <p class="job-meta mono muted">Boulder, CO · 100% Remote</p>
+            </div>
+            <span class="job-dates mono">Feb 2026 – Present</span>
+          </div>
+          <ul class="job-points">
+            <li>
+              <strong>Web Application Vulnerability Scanner:</strong> Built a tool that tests
+              running web apps, ranks findings by severity, and provides clear remediation
+              guidance through an interface designed for non-security users.
+            </li>
+            <li>
+              <strong>AI-Powered Repository Scanner:</strong> Engineered a code scanner
+              combining Semgrep (code flaws), Gitleaks (exposed secrets), and Trivy
+              (vulnerable dependencies), with AI agents generating tailored remediation for
+              each finding, turning raw scan output into actionable fixes.
+            </li>
+            <li>
+              <strong>SIEM Evaluation:</strong> Conducted a proof of concept of Wazuh to
+              determine whether it could reliably ingest and monitor customer telemetry,
+              informing the company's tooling decision.
+            </li>
+          </ul>
+          <div class="job-foot">
+            <ul class="tags small">
+              <li>Python</li><li>HTML/CSS</li><li>Git</li><li>GitHub</li><li>REST APIs</li><li>Web Development</li>
+            </ul>
+            <a href="#projects" class="job-link mono">See these projects →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <!-- ===================== SKILLS ===================== -->
     <section id="skills" class="section">
       <div class="container">
-        <h2 class="section-title"><span class="mono accent">02.</span> Skills &amp; Tools</h2>
+        <h2 class="section-title"><span class="mono accent">03.</span> Skills &amp; Tools</h2>
         <div class="skills-grid">
           <div class="skill-card">
             <h3>Languages</h3>
@@ -149,7 +192,7 @@ siem · ai-assisted defense</span>
     <!-- ===================== PROJECTS ===================== -->
     <section id="projects" class="section">
       <div class="container">
-        <h2 class="section-title"><span class="mono accent">03.</span> Projects</h2>
+        <h2 class="section-title"><span class="mono accent">04.</span> Projects</h2>
 
         <!-- Filter buttons: data-filter must match a project's data-category -->
         <div class="filters">
@@ -180,9 +223,9 @@ siem · ai-assisted defense</span>
             </div>
             <h3>Web Application Vulnerability Scanner</h3>
             <p>
-              Built from the ground up to scan live web applications. It detects
-              vulnerabilities, prioritizes them by severity, and explains how to fix each
-              one, so developers can act quickly without being security experts.
+              Built from the ground up to test running web applications. It ranks
+              findings by severity and gives clear remediation guidance through an
+              interface designed for non-security users.
             </p>
             <ul class="tags small">
               <li>Nuclei</li><li>Selenium</li><li>Prioritization</li><li>Remediation Guidance</li>
@@ -197,14 +240,14 @@ siem · ai-assisted defense</span>
                 <a href="https://github.com/pobtampal/vulnerabilityAI" target="_blank" rel="noopener" aria-label="Source code on GitHub">Code ↗</a>
               </div>
             </div>
-            <h3>Source Code Repository Scanner</h3>
+            <h3>AI-Powered Repository Scanner</h3>
             <p>
-              Built from the ground up to scan source code repositories for vulnerabilities,
-              leaked secrets, and risky dependencies. Every finding is prioritized and comes
-              with clear guidance on how to fix it.
+              Combines Semgrep (code flaws), Gitleaks (exposed secrets), and Trivy
+              (vulnerable dependencies), with AI agents that generate tailored remediation
+              for each finding, turning raw scan output into actionable fixes.
             </p>
             <ul class="tags small">
-              <li>Semgrep</li><li>Gitleaks</li><li>Trivy</li>
+              <li>Semgrep</li><li>Gitleaks</li><li>Trivy</li><li>AI Agents</li>
             </ul>
           </article>
 
@@ -218,8 +261,8 @@ siem · ai-assisted defense</span>
             </div>
             <h3>Wazuh SIEM Proof of Concept</h3>
             <p>
-              Ran a SIEM proof of concept with Wazuh to assess how well it could monitor
-              customer telemetry.
+              Evaluated whether Wazuh could reliably ingest and monitor customer
+              telemetry. The results informed the company's SIEM tooling decision.
             </p>
             <ul class="tags small">
               <li>Wazuh</li><li>SIEM</li><li>Telemetry</li>
@@ -253,7 +296,7 @@ siem · ai-assisted defense</span>
     <!-- ===================== CERTIFICATIONS ===================== -->
     <section id="certs" class="section">
       <div class="container">
-        <h2 class="section-title"><span class="mono accent">04.</span> Certifications</h2>
+        <h2 class="section-title"><span class="mono accent">05.</span> Certifications</h2>
         <div class="certs-grid">
           <!-- Copy a .cert line to add more certifications -->
           <a href="certificates/cybersecurity-bootcamp-csueb.pdf" class="cert" target="_blank" rel="noopener">
@@ -277,7 +320,7 @@ siem · ai-assisted defense</span>
     <!-- ===================== CONTACT ===================== -->
     <section id="contact" class="section contact">
       <div class="container">
-        <h2 class="section-title"><span class="mono accent">05.</span> Get In Touch</h2>
+        <h2 class="section-title"><span class="mono accent">06.</span> Get In Touch</h2>
         <p class="lead">
           I'm looking for a full-time role on a security team, and I'm always happy
           to talk about AppSec, detection, or AI in security. The best way to reach
