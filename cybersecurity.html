@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pobtam Pal | Cybersecurity Portfolio</title>
+  <meta name="description" content="Cybersecurity portfolio: projects in penetration testing, threat detection, and security engineering." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">&gt;_ <span>pobtampal</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links">
+        <a href="index.html">← Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certs">Certifications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow mono">// cybersecurity portfolio</p>
+          <h1>Hi, I'm <span class="accent">Pobtam Pal</span>.</h1>
+          <p class="lead">
+            Security engineer building AI-assisted defenses for a threat landscape
+            where attackers now use AI too.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <!-- TODO: Replace with your LinkedIn URL -->
+            <a href="https://www.linkedin.com/in/pobtam-pal-979139377" class="btn btn-ghost" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+              LinkedIn
+            </a>
+            <!-- TODO: Replace with your GitHub URL -->
+            <a href="https://github.com/pobtampal" class="btn btn-ghost" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57v-2c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.09-.73.09-.73 1.2.09 1.83 1.24 1.83 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.36.81 1.1.81 2.22v3.29c0 .32.21.7.82.58A12 12 0 0 0 12 .3"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="terminal" aria-hidden="true">
+          <div class="terminal-bar">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="terminal-title mono">~/whoami</span>
+          </div>
+          <pre class="terminal-body mono"><span class="prompt">$</span> whoami
+<span class="out">pobtampal</span>
+<span class="prompt">$</span> cat focus.txt
+<span class="out">application security · vulnerability scanning
+siem · ai-assisted defense</span>
+<span class="prompt">$</span> <span class="typed" id="typed"></span><span class="cursor">█</span></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title"><span class="mono accent">01.</span> About Me</h2>
+        <div class="about-grid">
+          <div>
+            <p>
+              I'm a security engineer focused on building AI-assisted defenses. Attackers
+              now use AI too, so defenders need tools that move just as fast.
+            </p>
+            <p>
+              At WanAware, I built two vulnerability scanners from the ground up: one for
+              live web applications and one for source code repositories. Both detect and
+              prioritize every finding, then explain how to fix it, so developers can act
+              quickly without needing to be security experts. I also ran a SIEM
+              proof-of-concept with Wazuh to assess how well we could monitor customer
+              telemetry.
+            </p>
+            <p>
+              I'm currently working toward CompTIA Security+ and looking to bring a
+              builder's mindset to a full-time security team.
+            </p>
+          </div>
+          <ul class="facts">
+            <!-- TODO: Fill in or delete the location and education rows -->
+            <li><span class="mono muted">location</span> City, Country</li>
+            <li><span class="mono muted">education</span> Your Degree, University</li>
+            <li><span class="mono muted">experience</span> WanAware</li>
+            <li><span class="mono muted">focus</span> AppSec, Cloud, SIEM</li>
+            <li><span class="mono muted">status</span> <span class="accent">Open to full-time roles</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title"><span class="mono accent">02.</span> Skills &amp; Tools</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Languages</h3>
+            <ul class="tags">
+              <li>Python</li><li>Golang</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>Security Scanning</h3>
+            <ul class="tags">
+              <li>Nuclei</li><li>Semgrep</li><li>Gitleaks</li><li>Trivy</li><li>gosec</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>Web Automation</h3>
+            <ul class="tags">
+              <li>Selenium</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>Cloud Security</h3>
+            <ul class="tags">
+              <li>GCP</li><li>Security Command Center</li><li>GitHub Actions</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>Detection &amp; Monitoring</h3>
+            <ul class="tags">
+              <li>Wazuh</li><li>SIEM</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title"><span class="mono accent">03.</span> Projects</h2>
+
+        <!-- Filter buttons: data-filter must match a project's data-category -->
+        <div class="filters">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="appsec">AppSec</button>
+          <button class="filter" data-filter="detection">Detection &amp; Monitoring</button>
+          <button class="filter" data-filter="cloud">Cloud</button>
+        </div>
+
+        <div class="projects-grid">
+
+          <!--
+            ======== PROJECT CARD TEMPLATE ========
+            Copy one <article> block below to add a new project.
+            - data-category: appsec | detection | cloud  (used by the filter buttons;
+              add a new button above if you create a new category)
+            - To link code or a write-up, add inside .project-links:
+              <a href="https://github.com/pobtampal/REPO" target="_blank" rel="noopener">Code ↗</a>
+          -->
+
+          <article class="project" data-category="appsec">
+            <div class="project-head">
+              <span class="project-icon mono">[dast]</span>
+              <div class="project-links">
+                <span class="mono muted">@ WanAware</span>
+                <a href="https://github.com/pobtampal/nuclei-profiles-copy" target="_blank" rel="noopener" aria-label="Source code on GitHub">Code ↗</a>
+              </div>
+            </div>
+            <h3>Web Application Vulnerability Scanner</h3>
+            <p>
+              Built from the ground up to scan live web applications. It detects
+              vulnerabilities, prioritizes them by severity, and explains how to fix each
+              one, so developers can act quickly without being security experts.
+            </p>
+            <ul class="tags small">
+              <li>Nuclei</li><li>Selenium</li><li>Prioritization</li><li>Remediation Guidance</li>
+            </ul>
+          </article>
+
+          <article class="project" data-category="appsec">
+            <div class="project-head">
+              <span class="project-icon mono">[sast]</span>
+              <div class="project-links">
+                <span class="mono muted">@ WanAware</span>
+                <a href="https://github.com/pobtampal/vulnerabilityAI" target="_blank" rel="noopener" aria-label="Source code on GitHub">Code ↗</a>
+              </div>
+            </div>
+            <h3>Source Code Repository Scanner</h3>
+            <p>
+              Built from the ground up to scan source code repositories for vulnerabilities,
+              leaked secrets, and risky dependencies. Every finding is prioritized and comes
+              with clear guidance on how to fix it.
+            </p>
+            <ul class="tags small">
+              <li>Semgrep</li><li>Gitleaks</li><li>Trivy</li>
+            </ul>
+          </article>
+
+          <article class="project" data-category="detection">
+            <div class="project-head">
+              <span class="project-icon mono">[siem]</span>
+              <div class="project-links">
+                <span class="mono muted">@ WanAware</span>
+                <a href="https://github.com/pobtampal/wanaware-wazuh-poc" target="_blank" rel="noopener" aria-label="Source code on GitHub">Code ↗</a>
+              </div>
+            </div>
+            <h3>Wazuh SIEM Proof of Concept</h3>
+            <p>
+              Ran a SIEM proof of concept with Wazuh to assess how well it could monitor
+              customer telemetry.
+            </p>
+            <ul class="tags small">
+              <li>Wazuh</li><li>SIEM</li><li>Telemetry</li>
+            </ul>
+          </article>
+
+          <article class="project" data-category="cloud">
+            <div class="project-head">
+              <span class="project-icon mono">[cloud]</span>
+              <div class="project-links">
+                <a href="https://github.com/pobtampal/GCP-Sec" target="_blank" rel="noopener" aria-label="Source code on GitHub">Code ↗</a>
+              </div>
+            </div>
+            <h3>GCP-Sec: Cloud Findings Analyzer</h3>
+            <p>
+              A Go CLI that turns GCP Security Command Center exports into prioritized,
+              actionable reports. It scores each finding from 0 to 100 using multiple risk
+              factors, maps compliance violations (CIS, PCI-DSS, HIPAA, SOC 2, NIST, and
+              more), and generates remediation guidance as Markdown, JSON, HTML, or CSV.
+              The repo itself is protected by a SAST pipeline in GitHub Actions.
+            </p>
+            <ul class="tags small">
+              <li>Golang</li><li>GCP</li><li>Risk Scoring</li><li>Compliance</li><li>GitHub Actions</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CERTIFICATIONS ===================== -->
+    <section id="certs" class="section">
+      <div class="container">
+        <h2 class="section-title"><span class="mono accent">04.</span> Certifications</h2>
+        <div class="certs-grid">
+          <!-- Copy a .cert line to add more certifications -->
+          <a href="certificates/cybersecurity-bootcamp-csueb.pdf" class="cert" target="_blank" rel="noopener">
+            <span class="cert-text">
+              <strong>Cybersecurity Bootcamp</strong>
+              <span class="muted">Cal State East Bay · Fullstack Academy</span>
+            </span>
+            <span class="accent mono cert-status">Completed ↗</span>
+          </a>
+          <div class="cert">
+            <span class="cert-text">
+              <strong>CompTIA Security+</strong>
+              <span class="muted">CompTIA</span>
+            </span>
+            <span class="muted mono cert-status">In progress</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="section-title"><span class="mono accent">05.</span> Get In Touch</h2>
+        <p class="lead">
+          I'm looking for a full-time role on a security team, and I'm always happy
+          to talk about AppSec, detection, or AI in security. The best way to reach
+          me is through LinkedIn or email.
+        </p>
+        <div class="contact-links">
+          <!-- TODO: Replace placeholders with your links -->
+          <a href="https://www.linkedin.com/in/pobtam-pal-979139377" class="contact-card" target="_blank" rel="noopener">
+            <span class="mono muted">linkedin</span>
+            <span>linkedin.com/in/pobtam-pal-979139377</span>
+          </a>
+          <a href="https://github.com/pobtampal" class="contact-card" target="_blank" rel="noopener">
+            <span class="mono muted">github</span>
+            <span>github.com/pobtampal</span>
+          </a>
+          <a href="mailto:you@example.com" class="contact-card">
+            <span class="mono muted">email</span>
+            <span>you@example.com</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container mono muted">
+      © <span id="year"></span> Pobtam Pal · Built with HTML, CSS &amp; JS
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

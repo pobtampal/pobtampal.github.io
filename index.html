@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pobtam Pal</title>
+  <meta name="description" content="Personal website of Pobtam Pal: cybersecurity, music, videos, and writing." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+
+  <main class="container">
+
+    <!-- ===================== PROFILE ===================== -->
+    <header class="profile">
+      <!-- TODO: Put your photo in the images/ folder and update src (e.g. images/profile.jpg) -->
+      <img src="images/profile.svg" alt="Photo of Pobtam Pal" class="avatar" />
+      <h1>Pobtam Pal</h1>
+      <p class="tagline">Security Engineer · AI-Assisted Defense</p>
+      <p class="bio">
+        I build security tools that help developers find and fix vulnerabilities
+        quickly. Here you'll find my security work, plus my music, videos, and writing.
+      </p>
+
+      <!-- Social icons -->
+      <div class="socials">
+        <!-- TODO: Replace with your LinkedIn URL -->
+        <a href="https://www.linkedin.com/in/pobtam-pal-979139377" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+        </a>
+        <!-- TODO: Replace with your GitHub URL -->
+        <a href="https://github.com/pobtampal" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57v-2c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.09-.73.09-.73 1.2.09 1.83 1.24 1.83 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.36.81 1.1.81 2.22v3.29c0 .32.21.7.82.58A12 12 0 0 0 12 .3"/></svg>
+        </a>
+        <!-- TODO: Replace with your YouTube channel URL -->
+        <a href="https://www.youtube.com/@YOUR-CHANNEL" target="_blank" rel="noopener" aria-label="YouTube">
+          <svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31.4 31.4 0 0 0 0 12a31.4 31.4 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1 31.4 31.4 0 0 0 .5-5.8 31.4 31.4 0 0 0-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg>
+        </a>
+        <!-- TODO: Replace with your email -->
+        <a href="mailto:you@example.com" aria-label="Email">
+          <svg viewBox="0 0 24 24"><path d="M2 4h20a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm10 8.4L2.4 6H2v.6l10 6.7 10-6.7V6h-.4L12 12.4z"/></svg>
+        </a>
+      </div>
+    </header>
+
+    <!-- ===================== PAGE LINKS ===================== -->
+    <section class="links" aria-label="Explore">
+      <h2 class="label mono">// explore</h2>
+
+      <!--
+        ======== LINK CARD TEMPLATE ========
+        Copy one <a class="link-card"> block to add a new page.
+        When a page is ready: set its href (e.g. "music.html"),
+        and remove the "coming-soon" class and the <span class="badge">.
+      -->
+
+      <a href="cybersecurity.html" class="link-card">
+        <span class="link-icon">🛡️</span>
+        <span class="link-text">
+          <strong>Cybersecurity Portfolio</strong>
+          <span>Projects, skills, and certifications</span>
+        </span>
+        <span class="arrow">→</span>
+      </a>
+
+      <!-- TODO: Create music.html (or link to Spotify/SoundCloud) and update href -->
+      <a href="#" class="link-card coming-soon">
+        <span class="link-icon">🎵</span>
+        <span class="link-text">
+          <strong>My Music</strong>
+          <span>Songs, covers, and releases</span>
+        </span>
+        <span class="badge mono">soon</span>
+      </a>
+
+      <!-- TODO: Replace href with your YouTube channel URL (and add target="_blank" rel="noopener") -->
+      <a href="#" class="link-card coming-soon">
+        <span class="link-icon">▶️</span>
+        <span class="link-text">
+          <strong>YouTube Channel</strong>
+          <span>Videos, tutorials, and vlogs</span>
+        </span>
+        <span class="badge mono">soon</span>
+      </a>
+
+      <!-- TODO: Create blog.html (or link to Medium/Substack) and update href -->
+      <a href="#" class="link-card coming-soon">
+        <span class="link-icon">✍️</span>
+        <span class="link-text">
+          <strong>Blog</strong>
+          <span>Thoughts, write-ups, and notes</span>
+        </span>
+        <span class="badge mono">soon</span>
+      </a>
+    </section>
+
+    <!-- ===================== PHOTOS ===================== -->
+    <section class="gallery-section" aria-label="Photos">
+      <h2 class="label mono">// photos</h2>
+      <!-- TODO: Add your photos to images/ and update each src + alt. Copy a <figure> to add more. -->
+      <div class="gallery">
+        <figure><img src="images/photo-1.svg" alt="Describe photo 1" loading="lazy" /></figure>
+        <figure><img src="images/photo-2.svg" alt="Describe photo 2" loading="lazy" /></figure>
+        <figure><img src="images/photo-3.svg" alt="Describe photo 3" loading="lazy" /></figure>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="contact" aria-label="Contact">
+      <h2 class="label mono">// contact</h2>
+      <!-- TODO: Fill in your contact info; delete any row you don't want public -->
+      <ul class="contact-list">
+        <li><span class="mono muted">email</span><a href="mailto:you@example.com">you@example.com</a></li>
+        <li><span class="mono muted">phone</span><a href="tel:+10000000000">+1 (000) 000-0000</a></li>
+        <li><span class="mono muted">location</span><span>City, Country</span></li>
+        <li><span class="mono muted">linkedin</span><a href="https://www.linkedin.com/in/pobtam-pal-979139377" target="_blank" rel="noopener">/in/pobtam-pal-979139377</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="footer mono muted">
+    © <span id="year"></span> Pobtam Pal
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

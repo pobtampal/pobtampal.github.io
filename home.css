@@ -1,0 +1,115 @@
+/* Main landing page. Shares the color palette with styles.css (cybersecurity page). */
+:root {
+  --bg: #0a0e14;
+  --card: #121925;
+  --border: #1f2a3a;
+  --text: #d6deeb;
+  --muted: #7f8ea3;
+  --accent: #3ddc97;
+  --accent-2: #4cc9f0;
+  --radius: 14px;
+  --font: "Inter", system-ui, -apple-system, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--text);
+  font-family: var(--font);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  background:
+    radial-gradient(700px 400px at 50% -10%, rgba(61, 220, 151, 0.12), transparent),
+    var(--bg);
+}
+
+a { color: inherit; text-decoration: none; }
+.mono { font-family: var(--mono); }
+.muted { color: var(--muted); }
+
+.container { width: min(640px, 100% - 32px); margin-inline: auto; padding: 64px 0 32px; }
+
+section { margin-top: 48px; }
+.label { font-size: 0.85rem; font-weight: 400; color: var(--accent); margin: 0 0 14px; }
+
+/* Profile */
+.profile { text-align: center; }
+.avatar {
+  width: 140px; height: 140px; border-radius: 50%; object-fit: cover;
+  border: 3px solid var(--accent);
+  box-shadow: 0 0 0 6px rgba(61, 220, 151, 0.12);
+}
+.profile h1 { margin: 18px 0 4px; font-size: 2rem; }
+.tagline { margin: 0; color: var(--accent-2); font-weight: 500; }
+.bio { color: var(--muted); max-width: 480px; margin: 14px auto 0; }
+
+.socials { display: flex; justify-content: center; gap: 12px; margin-top: 22px; }
+.socials a {
+  display: grid; place-items: center;
+  width: 42px; height: 42px; border-radius: 50%;
+  background: var(--card); border: 1px solid var(--border);
+  transition: border-color .2s, transform .2s, color .2s;
+}
+.socials a:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
+.socials svg { width: 18px; height: 18px; fill: currentColor; }
+
+/* Link cards */
+.links { display: flex; flex-direction: column; gap: 12px; }
+.link-card {
+  display: flex; align-items: center; gap: 16px;
+  padding: 18px 20px;
+  background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+  transition: border-color .2s, transform .2s, background .2s;
+}
+.link-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+.link-icon {
+  flex-shrink: 0; display: grid; place-items: center;
+  width: 44px; height: 44px; border-radius: 10px;
+  background: rgba(61, 220, 151, 0.08); font-size: 1.3rem;
+}
+.link-text { flex: 1; display: flex; flex-direction: column; min-width: 0; }
+.link-text strong { font-size: 1.05rem; }
+.link-text span { color: var(--muted); font-size: 0.9rem; }
+.arrow { color: var(--accent); font-size: 1.2rem; transition: transform .2s; }
+.link-card:hover .arrow { transform: translateX(4px); }
+
+.link-card.coming-soon { opacity: 0.6; cursor: default; }
+.link-card.coming-soon:hover { transform: none; border-color: var(--border); }
+.badge {
+  font-size: 0.7rem; padding: 3px 8px; border-radius: 999px;
+  border: 1px solid var(--border); color: var(--muted);
+}
+
+/* Gallery */
+.gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.gallery figure { margin: 0; aspect-ratio: 1; overflow: hidden; border-radius: 10px; border: 1px solid var(--border); }
+.gallery img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .4s; }
+.gallery figure:hover img { transform: scale(1.05); }
+
+/* Contact */
+.contact-list {
+  list-style: none; margin: 0; padding: 6px 20px;
+  background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+}
+.contact-list li {
+  display: flex; justify-content: space-between; gap: 16px;
+  padding: 12px 0; border-bottom: 1px dashed var(--border);
+  overflow-wrap: anywhere; text-align: right;
+}
+.contact-list li:last-child { border-bottom: 0; }
+.contact-list a:hover { color: var(--accent); }
+
+.footer { text-align: center; font-size: 0.8rem; padding: 24px 16px 40px; }
+
+@media (max-width: 480px) {
+  .container { padding-top: 40px; }
+  .gallery { grid-template-columns: repeat(2, 1fr); }
+  .contact-list li { flex-direction: column; gap: 2px; text-align: left; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}
